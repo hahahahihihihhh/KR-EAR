@@ -179,6 +179,7 @@ double norm(int e1, int rel)
 		else
 			break;
 	}
+    return 1;
 }
 int rand_max(int x)
 {
@@ -400,7 +401,7 @@ void sgd()
 //	cout<<220<<endl;
     res=0;
     int nbatches=100;
-    int nepoch = 1000;
+    int nepoch = 10;  // 1000
     int batchsize = fb_h.size()/nbatches;
 	int batchsize2 = attr_h.size()/nbatches;
 	//cout<<batchsize<<' '<<batchsize2<<endl;
