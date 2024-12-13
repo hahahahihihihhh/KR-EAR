@@ -25,8 +25,8 @@ int L1_flag=1;
 
 //parameter
 
-int n = 100;
-int m = 100;
+int n = 128;     //! 100 dimension of ent&rel
+int m = 128;     //! 100 dimension of att&val
 double rate = 0.0002;
 double margin = 1;
 string version = "0";
@@ -146,7 +146,7 @@ double norm(vector<double> &a, double y)
 }
 
 struct timeval t_start,t_end; 
-long start,end;
+long start,_end;
 
 void time_begin()
 {
@@ -157,8 +157,8 @@ void time_begin()
 void time_end()
 {
   gettimeofday(&t_end, NULL); 
-  end = ((long)t_end.tv_sec)*1000+(long)t_end.tv_usec/1000; 
-  cout<<"time(s):\t"<<(double(end)-double(start))/1000<<endl;
+  _end = ((long)t_end.tv_sec)*1000+(long)t_end.tv_usec/1000;
+  cout<<"time(s):\t"<<(double(_end)-double(start))/1000<<endl;
 }
 
 
@@ -460,8 +460,8 @@ void sgd()
 {
 //	cout<<220<<endl;
     res=0;
-    int nbatches=100;
-    int nepoch = 300;
+    int nbatches=20;    //! 100
+    int nepoch = 100;  //! 300
     int batchsize = fb_h.size()/nbatches;
 	int batchsize2 = attr_h.size()/nbatches;
 	//cout<<batchsize<<' '<<batchsize2<<endl;'
@@ -571,7 +571,7 @@ void sgd()
 			attr_beta = attr_beta_tmp;
 			A = A_tmp;
      	}
-		for (int i=0; i<10; i++)
+		for (int i=0; i<5; i++)    //! 10
 			cout<<vec_len(attr_beta[i])<<' ';
 
 		cout<<endl;
@@ -808,7 +808,7 @@ void prepare()
 		val_num++;
 	}
 	fclose(f_val);
-	attribute_val.resize(relation_num);
+	attribute_val.resize(attribute_num);
 	entity_attr_val.resize(entity_num);
 //	cout<<"here"<<endl;
 	FILE* f3 = fopen("../data/attribute_val.txt", "r");

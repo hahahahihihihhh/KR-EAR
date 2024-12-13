@@ -22,8 +22,8 @@ int L1_flag=1;
 
 //parameter
 
-int n = 100;
-int m = 100;
+int n = 128;     //! 100 dimension of ent&rel
+int m = 128;     //! 100 dimension of att&val
 double rate = 0.001;
 double margin = 1;
 string version = "0";
@@ -400,8 +400,8 @@ void sgd()
 {
 //	cout<<220<<endl;
     res=0;
-    int nbatches=100;
-    int nepoch = 10;  // 1000
+    int nbatches=20;    //! 100
+    int nepoch = 1000;  //! 1000
     int batchsize = fb_h.size()/nbatches;
 	int batchsize2 = attr_h.size()/nbatches;
 	//cout<<batchsize<<' '<<batchsize2<<endl;
@@ -501,7 +501,7 @@ void sgd()
 			attribute_vec = attribute_vec_tmp;
 			attr_beta = attr_beta_tmp;
      	}
-		for (int i=0; i<10; i++)
+		for (int i=0; i<5; i++)     //! 10
 			cout<<vec_len(attr_beta[i])<<' ';
 
 		cout<<endl;
@@ -674,7 +674,7 @@ void prepare()
 		val_num++;
 	}
 	fclose(f_val);
-	attribute_val.resize(relation_num);
+	attribute_val.resize(attribute_num);
 	entity_attr_val.resize(entity_num);
 	cout<<"here"<<endl;
 	FILE* f3 = fopen("../data/attribute_val.txt", "r");
