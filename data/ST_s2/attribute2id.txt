@@ -1,0 +1,9 @@
+accommodations	0
+catering_services	1
+education_services	2
+enterprises	3
+living_services	4
+medical_services	5
+others	6
+shopping_services	7
+transportation_facilities	8

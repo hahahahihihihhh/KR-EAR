@@ -1,2 +1,2 @@
 adj	0
-not_adj 1
+adj2	1
