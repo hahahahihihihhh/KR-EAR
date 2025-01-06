@@ -1,2 +1,3 @@
 adj	0
-adj2	1
+adj1	1
+adj2	2

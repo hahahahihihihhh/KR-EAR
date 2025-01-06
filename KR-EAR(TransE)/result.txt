@@ -4,17 +4,32 @@ n = m = 64, nbatches = 20, epochs = 1000, loss = 500+
 n = m = 128, nbatches = 20, epochs = 1000, loss = 120-130
 n = m = 256, nbatches = 20, epochs = 1000, loss = 80-90(80.66)
 
-ST_s2
-n = m = 64, nbatches = 20, epochs = 1000, loss = 1092.49
-n = m = 128, nbatches = 20, epochs = 1000, loss = 571.655
-n = m = 256, nbatches = 20, epochs = 1000, loss = 575.047
-
 ST_s1
 n = m = 64, nbatches = 20, epochs = 1000, loss = 643.392
 n = m = 128, nbatches = 20, epochs = 1000, loss = 228.559
 n = m = 256, nbatches = 20, epochs = 1000, loss = 219.635
 
+ST_s2
+n = m = 64, nbatches = 20, epochs = 1000, loss = 1092.49
+n = m = 128, nbatches = 20, epochs = 1000, loss = 571.655
+n = m = 256, nbatches = 20, epochs = 1000, loss = 575.047
+
 ST_s3
 n = m = 64, nbatches = 20, epochs = 1000, loss = 1023.24
 n = m = 128, nbatches = 20, epochs = 1000, loss = 929.293
 n = m = 256, nbatches = 20, epochs = 1000, loss = 965.714
+
+STF_s1
+n = m = 64, nbatches = 20, epochs = 1000, loss = 852.158
+n = m = 128, nbatches = 20, epochs = 1000, loss =
+n = m = 256, nbatches = 20, epochs = 1000, loss = 481.322
+
+STF_s2
+n = m = 64, nbatches = 20, epochs = 1000, loss = 908.62
+n = m = 128, nbatches = 20, epochs = 1000, loss = 783.264
+n = m = 256, nbatches = 20, epochs = 1000, loss = 815.069
+
+STF_s3
+n = m = 64, nbatches = 20, epochs = 1000, loss = 1232.58
+n = m = 128, nbatches = 20, epochs = 1000, loss = 1132.91
+n = m = 256, nbatches = 20, epochs = 1000, loss = 1156.93
