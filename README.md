@@ -76,6 +76,8 @@ COMPILE
 
 Just type make in the folder ./
 
+    mingw32-make
+
 RUN
 ==========
 
