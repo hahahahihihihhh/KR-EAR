@@ -3,5 +3,5 @@ KR-EAR(TransE)/.idea
 *.exe
 /KR-EAR(TransE)/NYCTAXI20140103/
 /KR-EAR(TransE)/TDRIVE20150406/
-/KR-EAR(TransE)/rub/SZ_TAXI/
+/KR-EAR(TransE)/SZ_TAXI/
 **/rub/
