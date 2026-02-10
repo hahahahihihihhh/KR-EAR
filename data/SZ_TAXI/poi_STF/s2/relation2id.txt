@@ -1,0 +1,3 @@
+adj_func	0
+adj_spat	1
+adj_temp	2

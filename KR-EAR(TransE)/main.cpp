@@ -22,8 +22,8 @@ int L1_flag=1;
 
 //parameter
 
-int n = 128;     //! 100 dimension of ent&rel
-int m = 128;     //! 100 dimension of att&val
+int n = 80;     //! 100 dimension of ent&rel
+int m = 80;     //! 100 dimension of att&val
 double rate = 0.001;
 double margin = 1;
 string version = "0";

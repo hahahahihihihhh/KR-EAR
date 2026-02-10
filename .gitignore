@@ -1,2 +1,8 @@
 /.idea/
+KR-EAR(TransE)/.idea
 *.exe
+/data/
+**/rub/
+/KR-EAR(TransE)/NYCTAXI20140103/
+/KR-EAR(TransE)/TDRIVE20150406/
+/KR-EAR(TransE)/SZ_TAXI/
